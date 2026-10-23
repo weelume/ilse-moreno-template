@@ -1,0 +1,85 @@
+{
+  "$schema": "../schemas/verification.schema.json",
+  "format": "git-template-verification",
+  "formatVersion": "0.2.0",
+  "status": "passed",
+  "checkedAt": "2026-10-23T12:56:33.519Z",
+  "sourceCommit": "e82f68eb8fd5972157e9bde290b065701437a32c",
+  "sourceDigest": "51685b3f5b9dbc88b4c993abfd19a1d8f0d3d54daa4ee645437e9ed0490ef37c",
+  "environment": {
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v24.16.0",
+    "packageManager": "12.10.1",
+    "cleanDirectory": true,
+    "localGitClone": true
+  },
+  "checks": [
+    {
+      "id": "typecheck",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-23T12:56:04.211Z",
+      "finishedAt": "2026-10-23T12:56:08.090Z"
+    },
+    {
+      "id": "lint",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "lint"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-23T12:56:08.090Z",
+      "finishedAt": "2026-10-23T12:56:11.367Z"
+    },
+    {
+      "id": "test",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "test"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-23T12:56:11.367Z",
+      "finishedAt": "2026-10-23T12:56:11.531Z"
+    },
+    {
+      "id": "build",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "build"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-23T12:56:11.531Z",
+      "finishedAt": "2026-10-23T12:56:32.500Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "status": "passed",
+      "stopped": true,
+      "checkedAt": "2026-10-23T12:56:33.257Z"
+    }
+  ],
+  "limitations": [
+    "公开 Git 仓库尚未配置，协议检查因缺少真实 gitUrl 失败，等待用户明确公开授权。",
+    "原站素材商用与再分发授权未确认，listed=false；源码 ZIP 未发布。",
+    "原站全部页面三端动效逐帧对照、减少动态效果系统设置切换尚未完成，不能据此声称完整动效验收通过。",
+    "浏览器输出截图经过工具缩放，元数据记录真实文件像素，CSS 视口另见 VERIFICATION.md。"
+  ]
+}
