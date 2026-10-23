@@ -140,6 +140,25 @@
         "network": false,
         "persistentData": false
       }
+    },
+    "verify": {
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "verify"
+      ],
+      "dependsOn": [],
+      "timeoutSeconds": 600,
+      "requiredEnv": [],
+      "requiresTools": [
+        "node",
+        "pnpm"
+      ],
+      "effects": {
+        "network": false,
+        "persistentData": false
+      }
     }
   },
   "services": {

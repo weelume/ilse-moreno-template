@@ -6,4 +6,4 @@ Next.js / React / TypeScript 的双语设计师网站，包含首页、作品、
 
 修改入口：src/features/site-templates/catalog/ilse-moreno/config/brand.ts 为品牌；content/ 为内容；theme.css 为主题；components/ 为公共交互；pages/ 为页面组合。
 
-公开 Git 仓库尚未配置：公开仓库创建被审批阻止，等待用户明确授权；template.json 未填写虚构 gitUrl，因此完整协议导入检查暂不通过。未公开发布或部署。素材许可见 .tpl/docs/LICENSE.md。
+源码仓库：https://github.com/weelume/ilse-moreno-template 。公开交付已经用户授权；未部署或上架。素材许可见 .tpl/docs/LICENSE.md。

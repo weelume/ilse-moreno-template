@@ -91,5 +91,6 @@
         "typecheck"
       ]
     }
-  ]
+  ],
+  "$schema": "./schemas/customization.schema.json"
 }
