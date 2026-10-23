@@ -6,8 +6,11 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { projects, text, type Locale } from '../content/data';
 import { constrain, zoomAroundCenter, zoomSteps, clamp, type Point } from '../canvas-model';
 import { Modal, Praise } from './Shared';
-const bounds = { left: 64, top: 64, right: 1680, bottom: 1210 };
-const positions = [{ x: 64, y: 104, w: 560, h: 350 }, { x: 720, y: 64, w: 260, h: 520 }, { x: 1076, y: 136, w: 480, h: 300 }, { x: 64, y: 720, w: 400, h: 250 }, { x: 560, y: 680, w: 260, h: 520 }, { x: 916, y: 752, w: 440, h: 275 }];
+
+const referencePositions = [{ x: 64, y: 104, w: 560, h: 350 }, { x: 720, y: 64, w: 260, h: 520 }, { x: 1076, y: 136, w: 480, h: 300 }, { x: 64, y: 720, w: 400, h: 250 }, { x: 560, y: 680, w: 260, h: 520 }, { x: 916, y: 752, w: 440, h: 275 }];
+// 预设坐标还原参考作品的比例；新增作品继续排布，空集合也有有效边界。
+const positions = projects.map((_, index) => referencePositions[index] ?? {x:64+index%3*536,y:1400+Math.floor((index-6)/3)*420,w:440,h:275});
+const bounds={left:Math.min(64,...positions.map(p=>p.x)),top:Math.min(64,...positions.map(p=>p.y)),right:Math.max(1,...positions.map(p=>p.x+p.w)),bottom:Math.max(1,...positions.map(p=>p.y+p.h+26))};
 type Travel = 'intro' | 'fly' | 'glide' | 'none';
 interface Drag {
     sx: number;
@@ -35,13 +38,14 @@ export default function WorkCanvas({ locale, basePath }: {
         setIntro(true);
         observer.disconnect();
     } }, { threshold: .35 }); observer.observe(el); return () => observer.disconnect(); }, [phone, mode]);
-    useEffect(() => { function escape(e: globalThis.KeyboardEvent) { if (e.key === 'Escape') {
+    useEffect(() => { function escape(e: globalThis.KeyboardEvent) { if (e.key === 'Escape' && (active >= 0 || praise >= 0)) {
+        if (active < 0) { setPraise(-1); return; }
         setActive(-1);
         setPraise(-1);
         setZoom(1);
         setPoint(constrain({ x: 0, y: 0 }, 1, width, height, bounds));
         setTravel('fly');
-    } } window.addEventListener('keydown', escape); return () => window.removeEventListener('keydown', escape); }, [width]);
+    } } window.addEventListener('keydown', escape); return () => window.removeEventListener('keydown', escape); }, [width, active, praise]);
     function go(p: Point, z: number, t: Travel) { setPoint(p); setZoom(z); setTravel(t); }
     function changeZoom(direction: number) { const at = zoomSteps.findIndex(z => z >= zoom - .001), next = zoomSteps[clamp((at < 0 ? zoomSteps.length - 1 : at) + direction, 0, zoomSteps.length - 1)]; go(constrain(zoomAroundCenter(point, zoom, next, width, height), next, width, height, bounds), next, 'fly'); setActive(-1); console.debug('[ilse-moreno:canvas] 缩放', { from: zoom, to: next }); }
     function focus(i: number) { if (active === i) {
@@ -89,6 +93,7 @@ export default function WorkCanvas({ locale, basePath }: {
         changeZoom(1); if (e.key === '-')
         changeZoom(-1); }
     const duration = reduced || travel === 'none' ? 0 : travel === 'intro' ? 1.2 : travel === 'fly' ? .6 : .35;
+    if (!projects.length) return <div className="im-glass">{text(locale,'暂无作品','No projects yet')}</div>;
     return <div ref={container} className="im-work-canvas" data-mode={mode} data-zoom={Math.round(zoom * 100)}>
     {mode === 'list' || reduced ? <div className="im-canvas-list im-glass"><div className="im-canvas-list-head"><span>{projects.length} {text(locale, '个项目', 'projects')}</span><button className="im-btn" onClick={() => setMode('canvas')}>{text(locale, '切换画布', 'View as canvas')}</button></div>{projects.map(p => <Link key={p.id} href={basePath + '/work/' + p.id} className="im-list-row"><img src={p.cover} alt={p.name}/><div><h3>{p.name}</h3><p>{p.summary[locale]}</p></div><span>{p.name} · {text(locale, '网站', 'Website')}</span><small>2026</small></Link>)}</div> : phone ? <><div className="im-phone-stack" tabIndex={0} role="group" aria-roledescription="carousel" aria-label={`${projects[slide].name} ${slide + 1}/${projects.length}`} onPointerDown={start} onPointerMove={move} onPointerUp={end} onPointerCancel={() => { drag.current = null; setSwipe(0); }} onKeyDown={keyboard}>{[2, 1, 0].map(offset => { const p = projects[(slide + offset) % projects.length]; return <motion.div key={offset} className="im-phone-card im-glass" aria-hidden={offset > 0} animate={{ x: offset === 0 ? swipe : 0, y: offset * 14, scale: 1 - offset * .04, rotate: offset === 0 ? swipe / 40 : 0, opacity: 1 - offset * .25 }} transition={{ duration: swipe !== 0 ? 0 : .3, ease: [.2, .8, .2, 1] }} style={{ zIndex: 3 - offset }}>{offset === 0 && <><span className="im-tag">{p.name} · {text(locale, '网站', 'Website')}</span><div className="im-phone-preview"><img src={p.mobile} alt={p.name} draggable={false}/><button data-canvas-ui className="im-pin" onClick={() => setPraise(slide)} aria-label={text(locale, '查看客户评价', 'Praise from') + ' ' + p.praise.name}><img src={p.praise.avatar} alt=""/><b>✓</b></button></div><Link data-active-project data-canvas-ui href={basePath + '/work/' + p.id}><h3>{p.name}</h3><p>{p.summary[locale]}</p></Link></>}</motion.div>; })}</div><div className="im-phone-controls"><div><button onClick={() => setSlide((slide - 1 + projects.length) % projects.length)} aria-label={text(locale, '上一个项目', 'Previous project')}>‹</button><span aria-live="polite">{slide + 1} / {projects.length}</span><button onClick={() => setSlide((slide + 1) % projects.length)} aria-label={text(locale, '下一个项目', 'Next project')}>›</button></div><button className="im-btn" onClick={() => setMode('list')}>{text(locale, '列表视图', 'View as list')}</button></div></> : <div ref={stage} className="im-canvas-stage" tabIndex={0} role="region" aria-label={text(locale, '作品画布，可拖拽或使用方向键平移，使用加减键缩放', 'Work canvas. Drag or use arrow keys to pan, plus and minus to zoom.')} onPointerDown={start} onPointerMove={move} onPointerUp={end} onPointerCancel={() => drag.current = null} onKeyDown={keyboard} style={{ backgroundSize: `${24 * zoom}px ${24 * zoom}px`, backgroundPosition: `${point.x}px ${point.y}px` }}><motion.div className="im-canvas-plane" initial={false} animate={intro || reduced ? { x: point.x, y: point.y, scale: zoom } : { x: width / 2 - 840 * .82, y: height / 2 - 637 * .82, scale: .82 }} transition={{ duration, ease: travel === 'fly' ? [.65, 0, .35, 1] : [.22, 1, .36, 1] }}>{projects.map((p, i) => { const box = positions[i]; return <motion.div key={p.id} data-frame={i} className="im-frame" data-active={active === i} role="button" tabIndex={0} aria-label={p.name + ': ' + p.summary[locale]} onKeyDown={e => { if (['Enter', ' '].includes(e.key)) {
         e.preventDefault();

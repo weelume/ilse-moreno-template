@@ -22,6 +22,8 @@ export function HostLogo({ light = false, ...props }: Omit<ComponentProps<'img'>
     light?: boolean;
 }) { const host = useContext(Context); return <img {...props} src={light ? host.lightLogo ?? brand.lightLogo : host.logo ?? brand.logo}/>; }
 export function HostFiling() { return useContext(Context).filing; }
+/** 独立品牌采用字标；仅在调用方显式提供图形标志时显示。 */
+export function HostNavigationLogo() { const host = useContext(Context); return host.logo ? <img className="im-nav-logo" src={host.logo} alt=""/> : null; }
 export function HostMarketplaceLink(props: ComponentProps<typeof Link>) { const host = useContext(Context); return host.marketplaceHref ? <Link {...props} href={host.marketplaceHref} aria-label={props['aria-label'] ? host.marketplaceAriaLabel?.[host.locale ?? 'zh'] ?? props['aria-label'] : undefined}/> : null; }
 export function HostBrandName({ locale = 'zh' }: {
     locale?: TemplateLocale;

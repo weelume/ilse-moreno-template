@@ -13,3 +13,5 @@
 @media(max-width:359px){.im{--im-gutter:18px}.im-wordmark{font-size:17px}.im-hero-copy{padding-left:8px}.im-hero-title .im-selection{padding:14px}.im-hero-title h1{font-size:28px}.im-hero-portrait img{height:360px}.im-praise-head{gap:8px}.im-approved{font-size:10px}.im-praise{padding:18px}.im-phone-controls{gap:6px}.im-phone-controls .im-btn{padding:10px 12px;font-size:12px}.im-phone-controls>div{gap:8px}}
 @media(prefers-reduced-motion:reduce){.im *{animation:none!important;transition:none!important;scroll-behavior:auto!important}.im-service:hover,.im-frame:hover .im-frame-image img,.im-project-card:hover img{transform:none}}
 .im-canvas-praise{position:absolute;width:400px;z-index:10;padding:32px 16px 16px;border-color:var(--im-line);box-shadow:0 12px 32px #0002}.im-canvas-praise .im-praise{border:0;box-shadow:none;background:transparent;padding:16px 12px}.im-canvas-praise>.im-btn{margin-inline:12px}.im-canvas-praise .im-close{right:4px;top:0}
+
+.im-nav-logo{width:24px;height:24px;object-fit:contain}.im-wordmark .im-selection{display:flex;align-items:center;gap:8px}
