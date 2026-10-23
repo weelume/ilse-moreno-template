@@ -30,7 +30,7 @@ export default function WorkCanvas({ locale, basePath }: {
     basePath: string;
 }) {
     const router = useRouter(), reduced = useReducedMotion(), stage = useRef<HTMLDivElement>(null), container = useRef<HTMLDivElement>(null), drag = useRef<Drag | null>(null), [width, setWidth] = useState(1248), [mode, setMode] = useState<'canvas' | 'list'>('canvas'), [zoom, setZoom] = useState(1), [point, setPoint] = useState<Point>({ x: 0, y: 0 }), [travel, setTravel] = useState<Travel>('intro'), [active, setActive] = useState(-1), [praise, setPraise] = useState(-1), [slide, setSlide] = useState(0), [swipe, setSwipe] = useState(0), [intro, setIntro] = useState(false), [dragged, setDragged] = useState(false);
-    const height = 760, phone = width < 760;
+    const height = 760, phone = width < 640;
     useEffect(() => { const el = container.current; if (!el)
         return; const observer = new ResizeObserver(([e]) => setWidth(e.contentRect.width)); observer.observe(el); return () => observer.disconnect(); }, []);
     useEffect(() => { const el = stage.current; if (!el || phone || mode !== 'canvas')
