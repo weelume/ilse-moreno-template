@@ -1,0 +1,1 @@
+export const brand = { name: { zh: '伊尔丝·莫雷诺', en: 'ilse moreno' }, logo: '/templates/ilse-moreno/logo.svg', lightLogo: '/templates/ilse-moreno/logo-light.svg', email: 'hello@ilsemoreno.design', year: 2026 };

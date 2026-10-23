@@ -1,0 +1,195 @@
+{
+  "$schema": "./schemas/template.schema.json",
+  "format": "git-template",
+  "formatVersion": "0.2.0",
+  "id": "ilse-moreno",
+  "version": "1.0.0",
+  "name": "Ilse Moreno · 交互画布作品集",
+  "localizedNames": {
+    "en": "Ilse Moreno · Canvas portfolio"
+  },
+  "summary": "双语响应式设计师作品集，支持画布探索、项目聚焦与六个案例。",
+  "sceneId": "brand-portfolio",
+  "listed": false,
+  "tags": [
+    "设计师",
+    "交互画布",
+    "作品集"
+  ],
+  "stack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Framer Motion"
+  ],
+  "accentColor": "#5b3df5",
+  "cover": "assets/home.webp",
+  "screenshots": [
+    {
+      "src": "assets/home.webp",
+      "alt": "Ilse Moreno home desktop",
+      "device": "desktop",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/work.webp",
+      "alt": "Ilse Moreno work desktop",
+      "device": "desktop",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/about.webp",
+      "alt": "Ilse Moreno about desktop",
+      "device": "desktop",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/contact.webp",
+      "alt": "Ilse Moreno contact desktop",
+      "device": "desktop",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/tablet-home.webp",
+      "alt": "Ilse Moreno home tablet",
+      "device": "tablet",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/tablet-work.webp",
+      "alt": "Ilse Moreno work tablet",
+      "device": "tablet",
+      "width": 819,
+      "height": 1159
+    },
+    {
+      "src": "assets/tablet-about.webp",
+      "alt": "Ilse Moreno about tablet",
+      "device": "tablet",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/tablet-contact.webp",
+      "alt": "Ilse Moreno contact tablet",
+      "device": "tablet",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/mobile-home.webp",
+      "alt": "Ilse Moreno home mobile",
+      "device": "mobile",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/mobile-work.webp",
+      "alt": "Ilse Moreno work mobile",
+      "device": "mobile",
+      "width": 375,
+      "height": 812
+    },
+    {
+      "src": "assets/mobile-about.webp",
+      "alt": "Ilse Moreno about mobile",
+      "device": "mobile",
+      "width": 1425,
+      "height": 990
+    },
+    {
+      "src": "assets/mobile-contact.webp",
+      "alt": "Ilse Moreno contact mobile",
+      "device": "mobile",
+      "width": 1425,
+      "height": 990
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "site",
+      "name": "作品集",
+      "platform": "pc",
+      "locales": [
+        "zh",
+        "en"
+      ],
+      "pages": [
+        {
+          "slug": "",
+          "title": "首页",
+          "localizedTitles": {
+            "en": "Home"
+          }
+        },
+        {
+          "slug": "work",
+          "title": "作品",
+          "localizedTitles": {
+            "en": "Work"
+          }
+        },
+        {
+          "slug": "about",
+          "title": "关于",
+          "localizedTitles": {
+            "en": "About"
+          }
+        },
+        {
+          "slug": "work/waymark",
+          "title": "waymark",
+          "localizedTitles": {
+            "en": "waymark"
+          }
+        },
+        {
+          "slug": "work/callwave",
+          "title": "callwave",
+          "localizedTitles": {
+            "en": "callwave"
+          }
+        },
+        {
+          "slug": "work/citebound",
+          "title": "citebound",
+          "localizedTitles": {
+            "en": "citebound"
+          }
+        },
+        {
+          "slug": "work/firstcheck",
+          "title": "firstcheck",
+          "localizedTitles": {
+            "en": "firstcheck"
+          }
+        },
+        {
+          "slug": "work/nonlinear",
+          "title": "nonlinear",
+          "localizedTitles": {
+            "en": "nonlinear"
+          }
+        },
+        {
+          "slug": "work/noted",
+          "title": "noted",
+          "localizedTitles": {
+            "en": "noted"
+          }
+        }
+      ]
+    }
+  ],
+  "license": {
+    "type": "restricted",
+    "file": "docs/LICENSE.md",
+    "summary": "模板实现与第三方素材权利分别管理；原站素材商业和再分发授权未确认。",
+    "redistributionAllowed": false
+  }
+}

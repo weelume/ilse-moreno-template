@@ -1,0 +1,95 @@
+{
+  "format": "git-template-customization",
+  "formatVersion": "0.2.0",
+  "entries": [
+    {
+      "id": "brand",
+      "title": "品牌与联系方式",
+      "description": "修改独立品牌和联系邮箱",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/ilse-moreno/config/brand.ts",
+          "kind": "file",
+          "purpose": "品牌配置"
+        }
+      ],
+      "constraints": [
+        "不在页面重复写入品牌",
+        "双语一起更新"
+      ],
+      "checks": [
+        "typecheck"
+      ]
+    },
+    {
+      "id": "content",
+      "title": "项目与双语文案",
+      "description": "编辑作品、服务和页面文案",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/ilse-moreno/content",
+          "kind": "directory",
+          "purpose": "内容数据"
+        },
+        {
+          "path": "src/features/site-templates/catalog/ilse-moreno/pages",
+          "kind": "directory",
+          "purpose": "页面组合"
+        }
+      ],
+      "constraints": [
+        "保留对应中英文",
+        "项目增删后更新元数据和画布坐标"
+      ],
+      "checks": [
+        "typecheck",
+        "test"
+      ]
+    },
+    {
+      "id": "theme",
+      "title": "主题与响应式",
+      "description": "调整色彩、字号、留白与玻璃卡片",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/ilse-moreno/theme.css",
+          "kind": "file",
+          "purpose": "主题系统"
+        }
+      ],
+      "constraints": [
+        "保留减少动态效果设置",
+        "检查 1440、834、390、320px"
+      ],
+      "checks": [
+        "typecheck",
+        "build"
+      ]
+    },
+    {
+      "id": "canvas",
+      "title": "画布交互",
+      "description": "修改缩放、惯性和项目聚焦",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/ilse-moreno/canvas-model.ts",
+          "kind": "file",
+          "purpose": "坐标运算"
+        },
+        {
+          "path": "src/features/site-templates/catalog/ilse-moreno/components/WorkCanvas.tsx",
+          "kind": "file",
+          "purpose": "交互组件"
+        }
+      ],
+      "constraints": [
+        "键盘与触控可操作",
+        "保持有界拖拽"
+      ],
+      "checks": [
+        "test",
+        "typecheck"
+      ]
+    }
+  ]
+}

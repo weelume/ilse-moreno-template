@@ -1,0 +1,285 @@
+{
+  "reference": "https://ilse-moreno.framer.website/",
+  "license": "原站图片与案例仅供演示研究，商用与再分发许可未确认。",
+  "assets": [
+    {
+      "src": "https://framerusercontent.com/images/jat68kx5v5nkpcutYB1IxuPqvyY.jpg",
+      "file": "assets/jat68kx5v5nkpcutYB1IxuPqvyY.jpg",
+      "alt": "Portrait of Ilse Moreno"
+    },
+    {
+      "src": "https://framerusercontent.com/images/55E8ThKLeIgaE1sCXRuDw1YUOU.jpg",
+      "file": "assets/55E8ThKLeIgaE1sCXRuDw1YUOU.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/wRl1uofG48SzNdOQ8AoyKSPHY4.jpg",
+      "file": "assets/wRl1uofG48SzNdOQ8AoyKSPHY4.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/WYgxZwjudlYibsVfK88y1iaQuvs.jpg",
+      "file": "assets/WYgxZwjudlYibsVfK88y1iaQuvs.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/r5OfHeFeEZKnA08zMiHsr6zni98.jpg",
+      "file": "assets/r5OfHeFeEZKnA08zMiHsr6zni98.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/4UoJB5qT9MAgmwqC2OxA3qqLAw.jpg",
+      "file": "assets/4UoJB5qT9MAgmwqC2OxA3qqLAw.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/VXa98yza3vWyGyYklssHDUBDUA.jpg",
+      "file": "assets/VXa98yza3vWyGyYklssHDUBDUA.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/97Z8uP6y54icWYKhyQylHY4nd4.png",
+      "file": "assets/97Z8uP6y54icWYKhyQylHY4nd4.png",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/B7gNsMiHQlcVQIxGPeH3MTFlI.png",
+      "file": "assets/B7gNsMiHQlcVQIxGPeH3MTFlI.png",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/xVM41JR9E9Vl4NDbH1Oi38mH0.png",
+      "file": "assets/xVM41JR9E9Vl4NDbH1Oi38mH0.png",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/LJWZBEmUwZO5BB17lJYH2V8I8.jpg",
+      "file": "assets/LJWZBEmUwZO5BB17lJYH2V8I8.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/1EIM5VCwnUXkrNGOlSBtWlKqI.svg",
+      "file": "assets/1EIM5VCwnUXkrNGOlSBtWlKqI.svg",
+      "alt": "Changeover"
+    },
+    {
+      "src": "https://framerusercontent.com/images/p5L8HrcSBIxbckrRBveRRSPob0w.svg",
+      "file": "assets/p5L8HrcSBIxbckrRBveRRSPob0w.svg",
+      "alt": "Common Practice"
+    },
+    {
+      "src": "https://framerusercontent.com/images/rhmns6llndIa7DwdgO4FjhKG6vk.svg",
+      "file": "assets/rhmns6llndIa7DwdgO4FjhKG6vk.svg",
+      "alt": "Fieldwork"
+    },
+    {
+      "src": "https://framerusercontent.com/images/TD0zV0ryD045YezJcfzTWP2uoc.svg",
+      "file": "assets/TD0zV0ryD045YezJcfzTWP2uoc.svg",
+      "alt": "Holdfast"
+    },
+    {
+      "src": "https://framerusercontent.com/images/OsqRqe640EnUAYDHdVWs6WisDxs.svg",
+      "file": "assets/OsqRqe640EnUAYDHdVWs6WisDxs.svg",
+      "alt": "Plumb"
+    },
+    {
+      "src": "https://framerusercontent.com/images/azTqtVqxZFfKH8Q7Di2zcUnjg.svg",
+      "file": "assets/azTqtVqxZFfKH8Q7Di2zcUnjg.svg",
+      "alt": "Relay Works"
+    },
+    {
+      "src": "https://framerusercontent.com/images/V5JSkkOQVFvs2kmhYaTndhKnk.svg",
+      "file": "assets/V5JSkkOQVFvs2kmhYaTndhKnk.svg",
+      "alt": "Shiproom"
+    },
+    {
+      "src": "https://framerusercontent.com/images/C70q6C4EgPCb3mAy2WZn1rsNVus.svg",
+      "file": "assets/C70q6C4EgPCb3mAy2WZn1rsNVus.svg",
+      "alt": "Workflow Lab"
+    },
+    {
+      "src": "https://framerusercontent.com/images/wAm809b7a2KRtirY598lbk9F8o.svg",
+      "file": "assets/wAm809b7a2KRtirY598lbk9F8o.svg",
+      "alt": "Product Launch Lab"
+    },
+    {
+      "src": "https://framerusercontent.com/images/fuXl4OGhO833gYWZu2aglHrQIGc.jpg",
+      "file": "assets/fuXl4OGhO833gYWZu2aglHrQIGc.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/nIb2jhxMLlyzMPUmuJDU7NGqz4M.jpg",
+      "file": "assets/nIb2jhxMLlyzMPUmuJDU7NGqz4M.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/4Z420WIFiwc48FCC2Oje9G2d4U.jpg",
+      "file": "assets/4Z420WIFiwc48FCC2Oje9G2d4U.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/093I2KoTRgsPWdcQRA8sznTTyCE.png",
+      "file": "assets/093I2KoTRgsPWdcQRA8sznTTyCE.png",
+      "alt": "Lina Cheng, General partner, FirstCheck"
+    },
+    {
+      "src": "https://framerusercontent.com/images/q8ZpWKNxEm8szLbqct7nWrss.png",
+      "file": "assets/q8ZpWKNxEm8szLbqct7nWrss.png",
+      "alt": "Jess Harlow, Product lead, Nonlinear"
+    },
+    {
+      "src": "https://framerusercontent.com/images/AJuP9MccraeEryubEkeHPvWEI8.png",
+      "file": "assets/AJuP9MccraeEryubEkeHPvWEI8.png",
+      "alt": "Owen Pike, Co-founder, Noted"
+    },
+    {
+      "src": "https://framerusercontent.com/images/NjInw3HDmddGhDPzOkQ4cwxouE.jpg",
+      "file": "assets/NjInw3HDmddGhDPzOkQ4cwxouE.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/gHJ6lZY1KyDjoeNTkpiTLgj3RI.svg",
+      "file": "assets/gHJ6lZY1KyDjoeNTkpiTLgj3RI.svg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/QlbTxJACyctTM2KloX3LjXuSiZ8.jpg",
+      "file": "assets/QlbTxJACyctTM2KloX3LjXuSiZ8.jpg",
+      "alt": "Chalked hand on a climbing hold"
+    },
+    {
+      "src": "https://framerusercontent.com/images/jXBxI2xiQQar5EbT5tPDEn9Hfd8.jpg",
+      "file": "assets/jXBxI2xiQQar5EbT5tPDEn9Hfd8.jpg",
+      "alt": "A clay bowl being shaped on a pottery wheel"
+    },
+    {
+      "src": "https://framerusercontent.com/images/cC7J9KS88dj3zMSmyu1IX4Y0uh8.jpg",
+      "file": "assets/cC7J9KS88dj3zMSmyu1IX4Y0uh8.jpg",
+      "alt": "A yellow tram on a Lisbon street"
+    },
+    {
+      "src": "https://framerusercontent.com/images/UDlsln6h46ZCvZhjqJBCgjHpoyo.jpg",
+      "file": "assets/UDlsln6h46ZCvZhjqJBCgjHpoyo.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/uOk8zgy5OVd4DFvFRs0VAmFDKo.jpg",
+      "file": "assets/uOk8zgy5OVd4DFvFRs0VAmFDKo.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/QFEwAbZwkmNJAyXSdypIM6aMmQo.jpg",
+      "file": "assets/QFEwAbZwkmNJAyXSdypIM6aMmQo.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/OUXi8614MPKJtvnbkaQ2ywLbJ4.jpg",
+      "file": "assets/OUXi8614MPKJtvnbkaQ2ywLbJ4.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/VyEQ6e6EotmbOQpP6S1DTXjnA.jpg",
+      "file": "assets/VyEQ6e6EotmbOQpP6S1DTXjnA.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/VWI18r1L3UYANeGRNgVVfJbNOoU.jpg",
+      "file": "assets/VWI18r1L3UYANeGRNgVVfJbNOoU.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/B0OlE2hOzGbgFqB3tdpEyS7fnxs.jpg",
+      "file": "assets/B0OlE2hOzGbgFqB3tdpEyS7fnxs.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/ZRRhc7MAU2id6srcZpRBNDHU0E.jpg",
+      "file": "assets/ZRRhc7MAU2id6srcZpRBNDHU0E.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/ZfJAiBfbHEczXMWqDVHzjkvVf8.jpg",
+      "file": "assets/ZfJAiBfbHEczXMWqDVHzjkvVf8.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/xUzldLkOzWSZVfRLFYcCFCNz9w.jpg",
+      "file": "assets/xUzldLkOzWSZVfRLFYcCFCNz9w.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/UQAa9LERcDSfXydftzUu9MIKVQ.jpg",
+      "file": "assets/UQAa9LERcDSfXydftzUu9MIKVQ.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/fh931rah3AnOr3Jo0DsOwM02I.jpg",
+      "file": "assets/fh931rah3AnOr3Jo0DsOwM02I.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/EP2CtGYO2GJYLW4Tfp6vlMRaRkY.jpg",
+      "file": "assets/EP2CtGYO2GJYLW4Tfp6vlMRaRkY.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/PiLOyIpw5HDjBvUhSmVisi98MK8.jpg",
+      "file": "assets/PiLOyIpw5HDjBvUhSmVisi98MK8.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/hYiWNqtE8RqzTEktyjzhzuLvS4.jpg",
+      "file": "assets/hYiWNqtE8RqzTEktyjzhzuLvS4.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/QnqOoKfKFOQ48SwAOnhntG8MrcM.jpg",
+      "file": "assets/QnqOoKfKFOQ48SwAOnhntG8MrcM.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/svJQIOhTL6jBonNUHjwUVOdRKs.jpg",
+      "file": "assets/svJQIOhTL6jBonNUHjwUVOdRKs.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/Y0mHfAPSPWBU2appGRY6q0AH97c.jpg",
+      "file": "assets/Y0mHfAPSPWBU2appGRY6q0AH97c.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/zCoHN71vilcRh0FN8Xgjtkrn2w.jpg",
+      "file": "assets/zCoHN71vilcRh0FN8Xgjtkrn2w.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/baWuex8b6kIY4QhxZeXwtRvZAXg.jpg",
+      "file": "assets/baWuex8b6kIY4QhxZeXwtRvZAXg.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/1wMxKmrocP1FvxoirHkrmAlNh5k.jpg",
+      "file": "assets/1wMxKmrocP1FvxoirHkrmAlNh5k.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/ZRPbySbgGsIdXm7ounuWOS2HsI.jpg",
+      "file": "assets/ZRPbySbgGsIdXm7ounuWOS2HsI.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/9Nq1v775i3FBOS5M6iaCZLaYw.jpg",
+      "file": "assets/9Nq1v775i3FBOS5M6iaCZLaYw.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/nuI6MTOR2h28UlIwltfEhVPJTAs.jpg",
+      "file": "assets/nuI6MTOR2h28UlIwltfEhVPJTAs.jpg",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/assets/r20oIXsTONF8cwfZ6k6tl1ire4.pdf",
+      "file": "assets/cv.pdf"
+    }
+  ]
+}
